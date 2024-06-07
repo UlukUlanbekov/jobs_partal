@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Application>
  */
-class ApplicationExceptionFactory extends Factory
+class ApplicationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
@@ -25,7 +25,7 @@ class ApplicationExceptionFactory extends Factory
     public function definition()
     {
         return [
-            'job_id' => function () {
+            'position_id' => function () {
                 return \App\Models\Position::factory()->create()->id;
             },
             'user_id' => function () {

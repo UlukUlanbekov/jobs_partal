@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('position_id');
+            $table->unsignedBigInteger('user_id');
+            $table->text('cover_letter')->nullable();
+            $table->foreign('position_id')->references('id')->on('positions');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
