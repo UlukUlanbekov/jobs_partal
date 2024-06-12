@@ -33,7 +33,7 @@
                             <a class="nav-link" href="{{ route('applications.index') }}">Applied Positions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Login</a>
+                            <a class="nav-link" href="{{ route('logout') }}">Logout</a>
                         </li>
                     @endguest
                 </ul>
